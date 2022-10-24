@@ -31,7 +31,7 @@ public class AlunosController {
 
     @RequestMapping(value = "insert", method = RequestMethod.POST)
     public String insert(@RequestParam("nome") String nome, @RequestParam("idade") int idade, @RequestParam("curso") String curso) {
-        Aluno aluno = new Aluno();
+        Aluno aluno = new Aluno ();
         aluno.setNome(nome);
         aluno.setIdade(idade);
         aluno.setCurso(curso);
